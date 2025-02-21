@@ -1,2 +1,13 @@
-**/.terraform/*
-.terraform
+# Ignorar as pastas .terraform em qualquer nível
+.terraform/
+
+# Ignorar os arquivos de estado do Terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignorar os arquivos de configuração de execução (se existir)
+*.tfvars
+*.tfvars.json
+
+# Ignorar qualquer arquivo de log do Terraform
+*.log
